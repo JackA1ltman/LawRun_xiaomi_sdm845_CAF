@@ -945,24 +945,6 @@
 		false, \
 		"enable rx frame pending check in WoW mode")
 
-/*
- * <ini>
- * gForceRX64BA - enable force 64 blockack mode for RX
- * @Min: 0
- * @Max: 1
- * @Default: 0
- *
- * This ini is used to control DP Software to use 64 blockack
- * for RX direction forcibly
- *
- * Usage: Internal
- *
- * </ini>
- */
-#define CFG_FORCE_RX_64_BA \
-		CFG_INI_BOOL("gForceRX64BA", \
-		false, "Enable/Disable force 64 blockack in RX side")
-
 #define CFG_DP \
 		CFG(CFG_DP_HTT_PACKET_TYPE) \
 		CFG(CFG_DP_INT_BATCH_THRESHOLD_OTHER) \
@@ -1041,6 +1023,5 @@
 		CFG(CFG_DP_LEGACY_MODE_CSUM_DISABLE) \
 		CFG(CFG_DP_RX_PENDING_HL_THRESHOLD) \
 		CFG(CFG_DP_RX_PENDING_LO_THRESHOLD) \
-		CFG(CFG_DP_WOW_CHECK_RX_PENDING) \
-		CFG(CFG_FORCE_RX_64_BA)
+		CFG(CFG_DP_WOW_CHECK_RX_PENDING)
 #endif /* _CFG_DP_H_ */
